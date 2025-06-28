@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/RayGame.dir/main.cpp.o -o RayGame   -L/home/axiscoords/Documents/RayGame/libs  -Wl,-rpath,/home/axiscoords/Documents/RayGame/libs -lraylib -lm -lpthread -ldl -lrt -lX11 

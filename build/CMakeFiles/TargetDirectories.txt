@@ -1,0 +1,3 @@
+/home/axiscoords/Documents/RayGame/build/CMakeFiles/game.dir
+/home/axiscoords/Documents/RayGame/build/CMakeFiles/edit_cache.dir
+/home/axiscoords/Documents/RayGame/build/CMakeFiles/rebuild_cache.dir
