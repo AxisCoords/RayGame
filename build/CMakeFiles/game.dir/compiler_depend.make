@@ -4,6 +4,7 @@
 CMakeFiles/game.dir/main.cpp.o: /home/axiscoords/Documents/RayGame/main.cpp \
   /home/axiscoords/Documents/RayGame/includes/raylib.h \
   /home/axiscoords/Documents/RayGame/src/globals.hpp \
+  /home/axiscoords/Documents/RayGame/src/sprite.hpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -198,6 +199,14 @@ CMakeFiles/game.dir/main.cpp.o: /home/axiscoords/Documents/RayGame/main.cpp \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
 
+CMakeFiles/game.dir/src/sprite.cpp.o: /home/axiscoords/Documents/RayGame/src/sprite.cpp \
+  /home/axiscoords/Documents/RayGame/includes/raylib.h \
+  /home/axiscoords/Documents/RayGame/src/sprite.hpp \
+  /usr/include/stdc-predef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h
+
+
+/home/axiscoords/Documents/RayGame/src/sprite.cpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h:
 
@@ -397,8 +406,6 @@ CMakeFiles/game.dir/main.cpp.o: /home/axiscoords/Documents/RayGame/main.cpp \
 
 /usr/include/c++/13/bits/ptr_traits.h:
 
-/usr/include/c++/13/bits/stl_iterator_base_types.h:
-
 /usr/include/c++/13/bits/localefwd.h:
 
 /usr/include/c++/13/bits/exception_defines.h:
@@ -471,6 +478,8 @@ CMakeFiles/game.dir/main.cpp.o: /home/axiscoords/Documents/RayGame/main.cpp \
 
 /usr/include/stdc-predef.h:
 
+/usr/include/c++/13/bits/stl_iterator_base_types.h:
+
 /usr/include/c++/13/bits/std_abs.h:
 
 /usr/include/c++/13/bits/postypes.h:
@@ -498,6 +507,8 @@ CMakeFiles/game.dir/main.cpp.o: /home/axiscoords/Documents/RayGame/main.cpp \
 /usr/include/c++/13/concepts:
 
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
+
+/home/axiscoords/Documents/RayGame/src/sprite.hpp:
 
 /usr/include/c++/13/ext/numeric_traits.h:
 

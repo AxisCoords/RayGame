@@ -5,6 +5,7 @@ CMakeFiles/game.dir/main.cpp.o
  /home/axiscoords/Documents/RayGame/main.cpp
  /home/axiscoords/Documents/RayGame/includes/raylib.h
  /home/axiscoords/Documents/RayGame/src/globals.hpp
+ /home/axiscoords/Documents/RayGame/src/sprite.hpp
  /usr/include/alloca.h
  /usr/include/asm-generic/errno-base.h
  /usr/include/asm-generic/errno.h
@@ -198,4 +199,11 @@ CMakeFiles/game.dir/main.cpp.o
  /usr/include/x86_64-linux-gnu/sys/types.h
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
+
+CMakeFiles/game.dir/src/sprite.cpp.o
+ /home/axiscoords/Documents/RayGame/src/sprite.cpp
+ /home/axiscoords/Documents/RayGame/includes/raylib.h
+ /home/axiscoords/Documents/RayGame/src/sprite.hpp
+ /usr/include/stdc-predef.h
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h
 

@@ -155,4 +155,5 @@ CMakeFiles/game.dir/main.cpp.o: \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
  /usr/include/c++/13/bits/istream.tcc \
  /home/axiscoords/Documents/RayGame/includes/raylib.h \
- /home/axiscoords/Documents/RayGame/src/globals.hpp
+ /home/axiscoords/Documents/RayGame/src/globals.hpp \
+ /home/axiscoords/Documents/RayGame/src/sprite.hpp

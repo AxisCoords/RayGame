@@ -1,6 +1,7 @@
 #include <iostream>
 #include "raylib.h"
 #include "src/globals.hpp"
+#include "src/sprite.hpp"
 
 int main() {
 	SetTraceLogLevel(LOG_WARNING);
@@ -11,14 +12,16 @@ int main() {
 	SetExitKey(KEY_NULL);
 	ClearWindowState(FLAG_WINDOW_HIDDEN);
 
-	while (!WindowShouldClose()) {
-		if (IsKeyPressed(KEY_T)) std::cout << "Hello World!" << std::endl;
+	gfx::Sprite sprite("image", (Vector2){100, 0}, 4);
 
+	while (!WindowShouldClose()) {
 		BeginDrawing();
-			ClearBackground(RED);
-			DrawText("HELLO!", 0, 0, 26, WHITE);
+			ClearBackground(BLACK);
+			sprite.Draw(WHITE);
 		EndDrawing();
 	}
+
+	sprite.Unload();
 
 	CloseAudioDevice();
 	CloseWindow();
