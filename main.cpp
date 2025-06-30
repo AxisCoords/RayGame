@@ -1,28 +1,40 @@
-#include <iostream>
+#include "src/WindowManager.hpp"
 #include "raylib.h"
 #include "src/globals.hpp"
 #include "src/sprite.hpp"
 
+static void drawDebug();
+
 int main() {
-	SetTraceLogLevel(LOG_WARNING);
-	SetConfigFlags(FLAG_MSAA_4X_HINT | FLAG_VSYNC_HINT | FLAG_WINDOW_ALWAYS_RUN | FLAG_WINDOW_HIGHDPI | FLAG_WINDOW_HIDDEN);
-
-	InitAudioDevice();
-	InitWindow(WIN_WIDTH, WIN_HEIGHT, "GAME");
-	SetExitKey(KEY_NULL);
-	ClearWindowState(FLAG_WINDOW_HIDDEN);
-
-	gfx::Sprite sprite("image", (Vector2){100, 0}, 4);
-
+	CreateWindow(WIN_WIDTH, WIN_HEIGHT, "GAME");
+	
 	while (!WindowShouldClose()) {
+		if (IsKeyPressed(KEY_F3)) showDebug = !showDebug;
+
 		BeginDrawing();
-			ClearBackground(BLACK);
-			sprite.Draw(WHITE);
+		ClearBackground(BLACK);
+
+		drawDebug();
 		EndDrawing();
 	}
+	
+	DestroyWindow();
+}
 
-	sprite.Unload();
+void drawDebug() {
+	if (showDebug) {
+		DrawFPS(0, 0);
 
-	CloseAudioDevice();
-	CloseWindow();
+		DrawLineV(
+			(Vector2){0, WIN_HEIGHT / 2}, 
+			(Vector2){WIN_WIDTH, WIN_HEIGHT / 2}, 
+			RED
+		);
+
+		DrawLineV(
+			(Vector2){WIN_WIDTH / 2, 0}, 
+			(Vector2){WIN_WIDTH / 2, WIN_HEIGHT}, 
+			GREEN
+		);
+	}
 }

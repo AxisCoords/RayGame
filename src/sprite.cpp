@@ -1,4 +1,5 @@
 #include "sprite.hpp"
+#include "logs.hpp"
 
 using namespace gfx;
 
@@ -25,24 +26,31 @@ void Sprite::SetOrigin(Origins origin) {
 
     switch (origin) {
         case TOP_LEFT:
+            *pO = (Vector2){0, 0};
             break;
         case TOP_CENTER:
+            *pO = (Vector2){w / 2 * Sprite::m_scale, 0};
             break;
         case TOP_RIGHT:
+            *pO = (Vector2){w * Sprite::m_scale, 0};
             break;
         case CENTER_RIGHT:
+            *pO = (Vector2){w * Sprite::m_scale, h / 2 * Sprite::m_scale};
             break;
         case BOTTOM_RIGHT:
+            *pO = (Vector2){w * Sprite::m_scale, h * Sprite::m_scale};
             break;
         case BOTTOM_CENTER:
+            *pO = (Vector2){w / 2 * Sprite::m_scale, h * Sprite::m_scale};
             break;
         case BOTTOM_LEFT:
+            *pO = (Vector2){0, h * Sprite::m_scale};
             break;
         case CENTER_LEFT:
+            *pO = (Vector2){0, h / 2 * Sprite::m_scale};
             break;
         case CENTER:
-            break;
-        default:
+            *pO = (Vector2){w / 2 * Sprite::m_scale, h / 2 * Sprite::m_scale};
             break;
     }
 }
