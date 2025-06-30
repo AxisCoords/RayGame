@@ -1,5 +1,4 @@
 #include "sprite.hpp"
-#include "logs.hpp"
 
 using namespace gfx;
 
