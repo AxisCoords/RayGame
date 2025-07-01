@@ -21,6 +21,7 @@ target_link_libraries(${PROJECT_NAME}
     dl
     rt
     X11
+    tinyxml2
 )
 
 # Windows
