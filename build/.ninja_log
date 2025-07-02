@@ -1,0 +1,5 @@
+# ninja log v5
+704	844	1751480882242538446	game	164b6809185de802
+4	704	1751480882103512110	CMakeFiles/game.dir/main.cpp.o	b06d9d030dccf5d5
+5	478	1751480881877469002	CMakeFiles/game.dir/src/sprite.cpp.o	14d0578f4bde8113
+5	69	1751480881468390552	CMakeFiles/game.dir/src/entity.cpp.o	cec881ea69dc7162

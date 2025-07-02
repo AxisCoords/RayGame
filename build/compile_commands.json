@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/home/axiscoords/Documents/RayGame/build",
+  "command": "/usr/bin/g++ -I/home/axiscoords/Documents/RayGame/includes -g -std=gnu++20 -o CMakeFiles/game.dir/main.cpp.o -c /home/axiscoords/Documents/RayGame/main.cpp",
+  "file": "/home/axiscoords/Documents/RayGame/main.cpp",
+  "output": "CMakeFiles/game.dir/main.cpp.o"
+},
+{
+  "directory": "/home/axiscoords/Documents/RayGame/build",
+  "command": "/usr/bin/g++ -I/home/axiscoords/Documents/RayGame/includes -g -std=gnu++20 -o CMakeFiles/game.dir/src/entity.cpp.o -c /home/axiscoords/Documents/RayGame/src/entity.cpp",
+  "file": "/home/axiscoords/Documents/RayGame/src/entity.cpp",
+  "output": "CMakeFiles/game.dir/src/entity.cpp.o"
+},
+{
+  "directory": "/home/axiscoords/Documents/RayGame/build",
+  "command": "/usr/bin/g++ -I/home/axiscoords/Documents/RayGame/includes -g -std=gnu++20 -o CMakeFiles/game.dir/src/sprite.cpp.o -c /home/axiscoords/Documents/RayGame/src/sprite.cpp",
+  "file": "/home/axiscoords/Documents/RayGame/src/sprite.cpp",
+  "output": "CMakeFiles/game.dir/src/sprite.cpp.o"
+}
+]
