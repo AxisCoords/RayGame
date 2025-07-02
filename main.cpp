@@ -3,6 +3,8 @@
 #include "src/globals.hpp"
 #include "src/entity.hpp"
 
+// Authur: AxisCoords / Behrooz Jamdar
+
 int main() {
 	CreateWindow(WIN_WIDTH, WIN_HEIGHT, "GAME");
 
