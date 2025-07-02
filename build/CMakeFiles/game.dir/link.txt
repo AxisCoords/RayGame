@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/game.dir/main.cpp.o CMakeFiles/game.dir/src/entity.cpp.o CMakeFiles/game.dir/src/sprite.cpp.o -o game   -L/home/axiscoords/Documents/RayGame/libs  -Wl,-rpath,/home/axiscoords/Documents/RayGame/libs -lraylib -lm -lpthread -ldl -lrt -lX11 
+/usr/bin/c++ CMakeFiles/game.dir/main.cpp.o CMakeFiles/game.dir/src/entity.cpp.o CMakeFiles/game.dir/src/sprite.cpp.o -o game   -L/home/axiscoords/Documents/RayGame/libs  -Wl,-rpath,/home/axiscoords/Documents/RayGame/libs -lraylib -lm -lpthread -ldl -lrt -lX11 -ltinyxml2 

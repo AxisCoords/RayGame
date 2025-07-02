@@ -16,13 +16,14 @@ int main() {
 			mob->pos.y += 0.5f;
 		}
 
+    mob->sprite->m_rotation++;
+
 		BeginDrawing();
 		ClearBackground(BLACK);
 
 		mob->Update();
 		mob->Render(WHITE);
 
-		/* #region Debug */
 		if (showDebug) {
 			DrawFPS(0, 0);
 
@@ -38,7 +39,7 @@ int main() {
 				GREEN
 			);
 		}
-		/* #endregion */
+
 		EndDrawing();
 	}
 

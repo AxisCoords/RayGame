@@ -16,7 +16,7 @@ void CreateWindow(uint32_t width, uint32_t height, const char* title, bool resiz
     InitWindow(width, height, title);
     if (!vsync) SetTargetFPS(targetFPS);
 
-    SetExitKey(KEY_NULL);
+    //SetExitKey(KEY_NULL);
     ClearWindowState(FLAG_WINDOW_HIDDEN);
 }
 
