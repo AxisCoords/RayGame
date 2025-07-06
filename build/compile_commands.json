@@ -13,6 +13,12 @@
 },
 {
   "directory": "/home/axiscoords/Documents/RayGame/build",
+  "command": "/usr/bin/g++ -I/home/axiscoords/Documents/RayGame/includes -g -std=gnu++20 -o CMakeFiles/game.dir/src/player.cpp.o -c /home/axiscoords/Documents/RayGame/src/player.cpp",
+  "file": "/home/axiscoords/Documents/RayGame/src/player.cpp",
+  "output": "CMakeFiles/game.dir/src/player.cpp.o"
+},
+{
+  "directory": "/home/axiscoords/Documents/RayGame/build",
   "command": "/usr/bin/g++ -I/home/axiscoords/Documents/RayGame/includes -g -std=gnu++20 -o CMakeFiles/game.dir/src/sprite.cpp.o -c /home/axiscoords/Documents/RayGame/src/sprite.cpp",
   "file": "/home/axiscoords/Documents/RayGame/src/sprite.cpp",
   "output": "CMakeFiles/game.dir/src/sprite.cpp.o"

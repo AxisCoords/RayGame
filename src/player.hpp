@@ -5,5 +5,7 @@
 namespace entt {
     class Player : public Entity {
         public:
+            Player(Vector2 pos);
+            void Update() override;
     };
 }

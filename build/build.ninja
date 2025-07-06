@@ -63,6 +63,13 @@ build CMakeFiles/game.dir/src/entity.cpp.o: CXX_COMPILER__game_unscanned_Debug /
   OBJECT_DIR = CMakeFiles/game.dir
   OBJECT_FILE_DIR = CMakeFiles/game.dir/src
 
+build CMakeFiles/game.dir/src/player.cpp.o: CXX_COMPILER__game_unscanned_Debug /home/axiscoords/Documents/RayGame/src/player.cpp || cmake_object_order_depends_target_game
+  DEP_FILE = CMakeFiles/game.dir/src/player.cpp.o.d
+  FLAGS = -g -std=gnu++20
+  INCLUDES = -I/home/axiscoords/Documents/RayGame/includes
+  OBJECT_DIR = CMakeFiles/game.dir
+  OBJECT_FILE_DIR = CMakeFiles/game.dir/src
+
 build CMakeFiles/game.dir/src/sprite.cpp.o: CXX_COMPILER__game_unscanned_Debug /home/axiscoords/Documents/RayGame/src/sprite.cpp || cmake_object_order_depends_target_game
   DEP_FILE = CMakeFiles/game.dir/src/sprite.cpp.o.d
   FLAGS = -g -std=gnu++20
@@ -78,9 +85,9 @@ build CMakeFiles/game.dir/src/sprite.cpp.o: CXX_COMPILER__game_unscanned_Debug /
 #############################################
 # Link the executable game
 
-build game: CXX_EXECUTABLE_LINKER__game_Debug CMakeFiles/game.dir/main.cpp.o CMakeFiles/game.dir/src/entity.cpp.o CMakeFiles/game.dir/src/sprite.cpp.o
+build game: CXX_EXECUTABLE_LINKER__game_Debug CMakeFiles/game.dir/main.cpp.o CMakeFiles/game.dir/src/entity.cpp.o CMakeFiles/game.dir/src/player.cpp.o CMakeFiles/game.dir/src/sprite.cpp.o
   FLAGS = -g
-  LINK_LIBRARIES = -Wl,-rpath,/home/axiscoords/Documents/RayGame/libs  -lraylib  -lm  -lpthread  -ldl  -lrt  -lX11  -ltinyxml2
+  LINK_LIBRARIES = -Wl,-rpath,/home/axiscoords/Documents/RayGame/libs  -lraylib  -lm  -lpthread  -ldl  -lrt  -lX11  -ltinyxml2  -lfmt
   LINK_PATH = -L/home/axiscoords/Documents/RayGame/libs
   OBJECT_DIR = CMakeFiles/game.dir
   POST_BUILD = :

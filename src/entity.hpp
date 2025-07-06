@@ -18,5 +18,8 @@ namespace entt {
             Color DEBUG_RECT_COLOR = (Color){255, 0, 98, 120};
 
             void drawDebug();
+        
+        protected:
+            Vector2 velocity;
     };
 }
