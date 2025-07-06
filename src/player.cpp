@@ -1,4 +1,3 @@
-#include <fmt/core.h>
 #include "player.hpp"
 #include "keyInput.hpp"
 
@@ -10,9 +9,6 @@ namespace entt {
     void Player::Update() {
         Vector2 input = GetVector2(KEY_RIGHT, KEY_LEFT, KEY_UP, KEY_DOWN);
         velocity = input * SPEED * GetFrameTime();
-
-        if (input)
-            fmt::print("{:.1f}, {:.1f}\n", velocity.x, velocity.y);
         
         Entity::Update();
     }
