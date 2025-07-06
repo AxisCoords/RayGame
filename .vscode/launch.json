@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Build & Run Game",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/game",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "preLaunchTask": "CMake Build",
+    }
+  ]
+}
