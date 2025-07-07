@@ -1,3 +1,4 @@
+#include <iostream>
 #include "player.hpp"
 #include "keyInput.hpp"
 
@@ -8,8 +9,17 @@ namespace entt {
 
     void Player::Update() {
         Vector2 input = GetVector2(KEY_RIGHT, KEY_LEFT, KEY_UP, KEY_DOWN);
-        velocity = input * SPEED * GetFrameTime();
+
+        // Movement handling
+        move(input);
+
+        // Sprite flipping
+        Entity::sprite->m_flipH = (velocity.x < 0) ? true : (velocity.x > 0) ? false : Entity::sprite->m_flipH;
         
         Entity::Update();
+    }
+
+    void Player::move(Vector2 input) {
+        velocity = input * SPEED * GetFrameTime();
     }
 }
