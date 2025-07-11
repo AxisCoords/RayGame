@@ -25,14 +25,12 @@ namespace entt {
             Entity::sprite->m_frame.height * size
         };
 
-        // this->SetFrame(frame);
         Entity::SetFrame(frame);
-
         Entity::sprite->SetOrigin(origin);
     }
 
     void Entity::SetFrame(Rectangle frame) {
-        Entity::rect = (Rectangle){Entity::pos.x, Entity::pos.y, frame.width * Entity::size, frame.height * Entity::size};
+        Entity::rect = (Rectangle){Entity::pos.x + Entity::rectPosOffset.x, Entity::pos.y + Entity::rectPosOffset.y, frame.width * Entity::size, frame.height * Entity::size};
         Entity::sprite->m_frame = frame;
     }
 
@@ -41,8 +39,8 @@ namespace entt {
         pos.y += velocity.y;
 
         Entity::sprite->m_pos = Entity::pos;
-        Entity::rect.x = Entity::pos.x - Entity::sprite->m_origin.x;
-        Entity::rect.y = Entity::pos.y - Entity::sprite->m_origin.y;
+        Entity::rect.x = (Entity::pos.x - Entity::sprite->m_origin.x) + Entity::rectPosOffset.x;
+        Entity::rect.y = (Entity::pos.y - Entity::sprite->m_origin.y) + Entity::rectPosOffset.y;
     }
 
     void Entity::Render(Color color) {

@@ -23,6 +23,8 @@ namespace entt {
         
         protected:
             Vector2 velocity;
+            Vector2 rectPosOffset;
+            
             void SetFrame(Rectangle frame);
     };
 }
