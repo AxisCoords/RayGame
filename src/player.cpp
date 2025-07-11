@@ -1,5 +1,6 @@
 #include "player.hpp"
 #include "keyInput.hpp"
+#include <fmt/core.h>
 
 namespace entt {
     const float SPEED = 200.0f;
@@ -8,11 +9,13 @@ namespace entt {
 
     void Player::Update() {
         Vector2 input = GetVector2(KEY_RIGHT, KEY_LEFT, KEY_UP, KEY_DOWN);
-
-        move(input); // Movement handling
-
-        Entity::sprite->m_flipH = (velocity.x < 0) ? true : (velocity.x > 0) ? false : Entity::sprite->m_flipH; // Sprite flipping
         
+        move(input);
+        Entity::sprite->m_flipH = (velocity.x < 0) ? true : (velocity.x > 0) ? false : Entity::sprite->m_flipH;
+
+        if (velocity != (Vector2){0, 0})
+            fmt::print("X: {}, Y: {}, W: {}, H: {}\n", rect.x, rect.y, rect.width, rect.height);
+
         Entity::Update();
     }
 
