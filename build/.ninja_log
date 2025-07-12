@@ -1,9 +1,11 @@
 # ninja log v5
 5	529	1752073625936062830	CMakeFiles/game.dir/src/animatedSprite.cpp.o	4769ec88a8cbf3b1
-2	362	1752273890250058641	CMakeFiles/game.dir/src/player.cpp.o	c91ba7f57573bd2a
-362	439	1752273890327057734	game	5c8c444918e451ed
+5	768	1752317026614187472	CMakeFiles/game.dir/src/player.cpp.o	c91ba7f57573bd2a
+768	1039	1752317026883194805	game	5c8c444918e451ed
 2	223	1752273865160360140	CMakeFiles/game.dir/main.cpp.o	b06d9d030dccf5d5
 2	73	1751627940637460297	CMakeFiles/game.dir/src/sprite.cpp.o	14d0578f4bde8113
 2	51	1752273864988362247	CMakeFiles/game.dir/src/entity.cpp.o	cec881ea69dc7162
-2	346	1752273897034979100	CMakeFiles/game.dir/src/player.cpp.o	c91ba7f57573bd2a
-346	414	1752273897100978331	game	5c8c444918e451ed
+4	96	1752334487659321708	CMakeFiles/game.dir/src/entity.cpp.o	cec881ea69dc7162
+3	379	1752334487941331099	CMakeFiles/game.dir/main.cpp.o	b06d9d030dccf5d5
+4	688	1752334488251341416	CMakeFiles/game.dir/src/player.cpp.o	c91ba7f57573bd2a
+688	849	1752334488410346708	game	5c8c444918e451ed
