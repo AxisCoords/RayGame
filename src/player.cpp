@@ -6,8 +6,8 @@ namespace entt {
     const float SPEED = 300.0f;
 
     Player::Player(Vector2 pos) : Entity("player", pos, 4, (Rectangle){0, 0, 24, 24}, gfx::BOTTOM_CENTER) {
-        this->rectPosOffset = (Vector2){31, 29}; //  Rect offset
-        this->rect = (Rectangle){0, 0, 33, 66}; // New rect size
+        this->rectPosOffset = (Vector2){32, 32}; //  Rect offset
+        this->rect = (Rectangle){0, 0, 32, 64}; // New rect size
     }
 
     void Player::Update() {
